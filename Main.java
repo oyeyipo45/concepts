@@ -1,15 +1,37 @@
+import java.util.Scanner;
+
 /**
  * main
  */
+//import java.util.Scanner;
+
 class Main {
-   // static int age = 12;
-
+   static int age = 12;
     public static void main(String[] args) {
-        int age = 40;
-        String name = "Damilola";
-        Double price = 3.33;
-        String formatedString = String.format("My name is %s. I am %d year old and my price is %f", name, age, price);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println(formatedString);
+        System.out.print("What is the first number: ");
+        Double number1 = scanner.nextDouble();
+
+        System.out.print("What is the second number: ");
+        Double number2 = scanner.nextDouble();
+        scanner.nextLine();
+
+        System.out.print("What operation to take: ");
+        String operation = scanner.nextLine();
+
+        switch (operation) {
+            case "sum":  
+                System.out.printf("%f + %f = %f", number1, number2, number1 + number2);
+;
+                break;
+        
+            default:
+                break;
+        }
+  
+
+
+        scanner.close();
     }
 }
