@@ -18,5 +18,9 @@ class Main {
         System.out.printf("%s, was born in %s and is not %d years old", user.name, user.birthDay.toString(),
                 user.age());
 
+        Book book = new Book();
+        book.title = "Things fall apart";
+        book.author = "Chinua Achebe";
+
     }
 }
