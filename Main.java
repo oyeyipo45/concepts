@@ -10,13 +10,9 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        User user = new User();
+        User user = new User("Damilola Oyeyipo", "1993-04-05");
 
-        user.name = "Damilola Oyeyipo";
-        user.birthDay = LocalDate.parse("1993-04-05");
-
-        // System.out.printf("%s, was born in %s and is not %d years old", user.name, user.birthDay.toString(),
-        //         user.age());
+        System.out.println(user.getName());
 
         Book book = new Book();
         book.title = "Things fall apart";
@@ -24,6 +20,6 @@ class Main {
 
         user.borrow(book);
 
-        System.out.printf("%s, Damilola's", user.books.toString());
+        System.out.printf("%s, Damilola's \n", user.books.toString());
     }
 }
