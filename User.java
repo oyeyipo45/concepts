@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class User {
     private String name;
     private LocalDate birthDay;
-    public ArrayList<Book> books = new ArrayList<Book>();
+    private ArrayList<Book> books = new ArrayList<Book>();
 
     User(String name, String birthDay) {
         this.name = name;
@@ -19,6 +19,10 @@ public class User {
     
     public String getName() {
         return this.name;
+    }
+
+    public String getBooks() {
+        return this.books.toString();
     }
 
     public String getBirthday() {

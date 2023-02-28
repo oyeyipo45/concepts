@@ -12,14 +12,13 @@ class Main {
     public static void main(String[] args) {
         User user = new User("Damilola Oyeyipo", "1993-04-05");
 
-        System.out.println(user.getName());
 
-        Book book = new Book();
-        book.title = "Things fall apart";
-        book.author = "Chinua Achebe";
+        Book book = new Book("Things fall apart", "Chinua Achebe");
 
         user.borrow(book);
 
-        System.out.printf("%s, Damilola's \n", user.books.toString());
+        System.out.printf("%s, Damilola's \n", user.getBooks());
+
+        System.out.printf("%s, is the name of the book and the author is %s \n", book.getTitle(), book.getAuthor());
     }
 }
