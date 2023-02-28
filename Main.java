@@ -12,10 +12,12 @@ class Main {
     public static void main(String[] args) {
         User user = new User("Damilola Oyeyipo", "1993-04-05");
 
+        Book book = new Book("Things fall apart", "Chinua Achebe", 47);
 
-        Book book = new Book("Things fall apart", "Chinua Achebe");
+        AudioBook audioBook = new AudioBook("The first book", "Chinua Achebe", 400, 40);
 
         user.borrow(book);
+        System.out.printf(" The audio book %s, by %s with  %s pages has a run  time of %s minutes \n", audioBook.getTitle(), audioBook.getAuthor(), audioBook.getPages(), audioBook.getRunTime());
 
         System.out.printf("%s, Damilola's \n", user.getBooks());
 

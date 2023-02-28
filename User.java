@@ -10,13 +10,12 @@ public class User {
     User(String name, String birthDay) {
         this.name = name;
         this.birthDay = LocalDate.parse(birthDay);
-
     }
 
     public void borrow(Book book) {
         this.books.add(book);
     }
-    
+
     public String getName() {
         return this.name;
     }
@@ -31,7 +30,6 @@ public class User {
 
     public int age() {
         Period age = Period.between(this.birthDay, LocalDate.now());
-
         return age.getYears();
     }
 }
