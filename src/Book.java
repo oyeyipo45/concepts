@@ -1,7 +1,9 @@
+package src;
+
 public class Book {
-    private String title;
-    private String author;
-    private int pages;
+    private final String title;
+    private final String author;
+    private final int pages;
 
 
     Book(String title, String author, int pages) {
@@ -13,7 +15,7 @@ public class Book {
     public String toString() {
         return String.format("%s by %s", this.title, this.author);
     }
-    
+
     public String getTitle() {
         return this.title;
     }
@@ -26,3 +28,4 @@ public class Book {
         return this.pages;
     }
 }
+

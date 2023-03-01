@@ -1,11 +1,13 @@
+package src;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 
 public class User {
-    private String name;
-    private LocalDate birthDay;
-    private ArrayList<Book> books = new ArrayList<Book>();
+    private final String name;
+    private final LocalDate birthDay;
+    private final ArrayList<Book> books = new ArrayList<>();
 
     User(String name, String birthDay) {
         this.name = name;

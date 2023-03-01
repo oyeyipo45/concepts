@@ -1,14 +1,10 @@
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Scanner;
+package src;
 
 /**
  * main
  */
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         User user = new User("Damilola Oyeyipo", "1993-04-05");
 
@@ -22,5 +18,7 @@ class Main {
         System.out.printf("%s, Damilola's \n", user.getBooks());
 
         System.out.printf("%s, is the name of the book and the author is %s \n", book.getTitle(), book.getAuthor());
+
+        System.out.printf("My name is %s and I was born on %s which makes me %s years old \n", user.getName(), user.getBirthday(), user.age());
     }
 }
